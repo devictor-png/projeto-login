@@ -2,12 +2,11 @@
 
 /*
 verde #526140
- marrom #5c5242
- azul #304c8a
-
+marrom #5c5242
+azul #304c8a
 */
 
-*{
+* {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   padding: 0px;
@@ -15,13 +14,13 @@ verde #526140
   box-sizing: border-box;
 }
 
-body,html{
+body, html {
   background-color: #5c5242;
   height: 100vh;
-  width: 100vh;
+  width: 100vw; /* Corrigido "100vh" para "100vw" */
 }
 
-main{
+main {
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -31,8 +30,7 @@ section#Login {
   position: absolute;
   top: 50%;
   left: 50%;
-transform: translate(-50%, -50%);
-
+  transform: translate(-50%, -50%);
   background-color: white;
   width: 250px;
   height: 500px;
@@ -40,8 +38,9 @@ transform: translate(-50%, -50%);
 }
 
 section#Login > div#imagem {
-  background-color: #5c5242 url(../imagens/pexels-andreea-ch-371539-1040893.jpg);
+  background-color: #5c5242;
+  background-image: url(../imagens/pexels-andreea-ch-371539-1040893.jpg); /* Caminho corrigido */
   height: 200px;
   background-size: cover;
+ 
 }
-
