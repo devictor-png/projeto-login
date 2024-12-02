@@ -48,6 +48,10 @@ section#Login > div#formulario {
    width: 50%;
    height: 100%;
  }
+
+ div#formulario > h1 {
+  font-size: 2em;
+ }
  
  section#Login > div#formulario {
    float: right;

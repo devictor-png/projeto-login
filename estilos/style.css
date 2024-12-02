@@ -12,18 +12,21 @@ azul #304c8a
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  
 }
 
 body, html {
   background-image: linear-gradient(to top, #5c5242,#526140);
   height: 100vh;
-  width: 100vw; /* Corrigido "100vh" para "100vw" */
+  width: 100vw;
+  
 }
 
 main {
   position: relative;
   height: 100vh;
   width: 100vw;
+  
 }
 
 section#Login {
@@ -32,14 +35,18 @@ section#Login {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+
   background-color: white;
   width: 250px;
-  height: 500px;
+  height: 515px;
   border-radius: 20px;
-  box-shadow: 100 100 100;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
 
   transition: width .3s, heith .3s;
   transition-timing-function: ease;
+
+
+
 }
 
 section#Login > div#imagem {
@@ -53,4 +60,52 @@ section#Login > div#imagem {
 section#Login > div#formulario {
   display: block;
   padding: 10px;
+  
 }
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+   
+}
+
+
+
+div#formulario > p {
+  font-size: 1.2em;
+ 
+}
+
+form > input[type=submit]{
+display: block;
+font-size: 1em;
+width: 100%;
+background-color: #304c8a;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+form > input[type=submit]:hover{
+  background-color: #031335;
+}
+
+form > div.campo{
+  background-color: #5c5242;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin: 5px 5px;
+}
+
+div.campo >input{
+  background-color: #16367a;
+  font-size: 1em;
+  width: 94%;
+  height: 65%;
+  margin: 7px 7px 7px 7px;
+border-radius: 8px;
+}
+

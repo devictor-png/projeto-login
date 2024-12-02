@@ -15,9 +15,18 @@
            <div id="formulario">
                  <h1>Login</h1>
                  <p>Seja bem-vindo(a) novamente.Faça login para acessar sua conta e poder fazer as confugurações do seu ambiente.</p>
-                 <form action="login.jsc" method="post">
-                  Email<input type="email"> <br>
-                  Senha<input type="password" name="senha" id="">
+                 <form action="login.jvs" method="post">
+                  <div class="campo">
+                     
+                     <input type="email" name="login" id="ilogin" placeholder="Seu email" autocomplete="email" required>
+                     <label for="ilogin"></label>
+                  </div>
+                  <div class="campo">
+                      
+                      <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" max="20">
+                      <label for="isenha"></label>
+                  </div>
+                  <input type="submit" value="Entrar">
                  </form>
 
            </div>
